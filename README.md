@@ -15,7 +15,7 @@ The architecture is knowledge-graph agnostic and can be applied to any KG suppor
 Accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia, May 10–14, 2026.
 
 Paper  
-*Competency Questions as Executable Plans: A Controlled {RAG} Architecture for Cultural Heritage Storytelling*
+*Competency Questions as Executable Plans: A Controlled RAG Architecture for Cultural Heritage Storytelling*
 
 This repository contains the reference implementation and reproducibility artefacts accompanying the paper.
 
