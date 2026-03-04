@@ -122,10 +122,11 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 If you use the AskCQ dataset or the methodologies and findings from this research in your work, please cite the original paper. (*Bibliographic details are omitted here to preserve anonymity for review processes.*)
 
 ```bibtex
-@article{AnonymousCQStoryRAG,
+@article{Barla2026CQStoryRAG,
   title={Competency Questions as Executable Plans: a Controlled RAG Architecture for Cultural Heritage Storytelling},
-  author={Anonymous Author(s)},
-  journal={Submitted for review},
-  year={202X},
-  note={Details omitted for double-blind review..}
+  author={Barla, Naga Sowjanya and de Berardinis, Jacopo},
+  journal={Springer},
+  booktitle = {Semantic Web -- 23rd International Conference, ESWC 2026, Dubrovnik, Croatia, May 10--14, 2026, Proceedings},
+  year={2026},
+  note={To appear}
 }
