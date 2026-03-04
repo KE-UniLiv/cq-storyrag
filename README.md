@@ -10,7 +10,12 @@ This work has been accepted at the **23rd International Conference on the Semant
 Paper:  
 *Competency Questions as Executable Plans: A Controlled RAG Architecture for Cultural Heritage Storytelling*
 
-```markdown
+
+
+Graph-centric Retrieval-Augmented Generation (RAG) for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
+
+The system constructs and validates a structured Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
+
 ## Method Overview
 
 The framework repurposes Competency Questions (CQs):
@@ -19,11 +24,6 @@ The framework repurposes Competency Questions (CQs):
 - At run time, as executable primitives that orchestrate Retrieval-Augmented Generation.
 
 Narratives are constructed as persona-conditioned sequences of narrative beats, where each beat corresponds to a tagged set of CQs whose answers are retrieved and assembled into an LLM prompt.
-```
-
-Graph-centric Retrieval-Augmented Generation (RAG) for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
-
-The system constructs and validates a structured Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
 
 
 ## Personas and patterns
