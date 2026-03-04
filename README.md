@@ -5,16 +5,16 @@
 
 ## ESWC 2026
 
-This work has been accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia.
+This work has been accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia, May 10–14, 2026.
 
 Paper:  
 *Competency Questions as Executable Plans: A Controlled RAG Architecture for Cultural Heritage Storytelling*
 
-
-
 Graph-centric Retrieval-Augmented Generation (RAG) for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
 
 The system constructs and validates a structured Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
+
+The architecture is knowledge-graph agnostic and can be applied to any KG supporting structured querying over typed entities and relations.
 
 ## Method Overview
 
@@ -23,10 +23,10 @@ The framework repurposes Competency Questions (CQs):
 - At design time, to scope and validate Knowledge Graph construction.
 - At run time, as executable primitives that orchestrate Retrieval-Augmented Generation.
 
-Narratives are constructed as persona-conditioned sequences of narrative beats, where each beat corresponds to a tagged set of CQs whose answers are retrieved and assembled into an LLM prompt.
+Narratives are constructed as persona-conditioned sequences of narrative beats, where each beat corresponds to a tagged set of CQs whose answers are retrieved and assembled into a structured LLM prompt.
 
 
-## Personas and patterns
+## Personas and retrieval paradigms
 
 - **Personas:** `Emma`, `Luca`
 - **Lengths:** `Short`, `Medium`, `Long`
@@ -144,7 +144,7 @@ If you use the LiveAid KG or the methodologies and findings from this research i
 
 ```bibtex
 @inproceedings{Barla2026CQDrivenRAG,
-  title={Competency Questions as Executable Plans: a Controlled RAG Architecture for Cultural Heritage Storytelling},
+  title = {Competency Questions as Executable Plans: A Controlled {RAG} Architecture for Cultural Heritage Storytelling},
   author={Barla, Naga Sowjanya and de Berardinis, Jacopo},
   publisher={Springer},
   booktitle = {Semantic Web -- 23rd International Conference, ESWC 2026, Dubrovnik, Croatia, May 10--14, 2026, Proceedings},
