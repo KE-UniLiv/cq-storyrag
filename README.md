@@ -3,13 +3,34 @@
 [![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
-Graph-centric RAG for Live Aid 1985 storytelling. The system builds a knowledge graph, retrieves evidence, generates persona-aligned narratives, and evaluates support, coverage, readability and cohesion.
+## ESWC 2026
+
+This work has been accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia.
+
+Paper:  
+*Competency Questions as Executable Plans: A Controlled RAG Architecture for Cultural Heritage Storytelling*
+
+```markdown
+## Method Overview
+
+The framework repurposes Competency Questions (CQs):
+
+- At design time, to scope and validate Knowledge Graph construction.
+- At run time, as executable primitives that orchestrate Retrieval-Augmented Generation.
+
+Narratives are constructed as persona-conditioned sequences of narrative beats, where each beat corresponds to a tagged set of CQs whose answers are retrieved and assembled into an LLM prompt.
+```
+
+Graph-centric Retrieval-Augmented Generation (RAG) for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
+
+The system constructs and validates a structured Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
+
 
 ## Personas and patterns
 
-- **Personas:** `Emma` or `Luca`
-- **Lengths:** `Short` `Medium` `Long`
-- **Patterns:** `KG` `Hybrid` `Graph`
+- **Personas:** `Emma`, `Luca`
+- **Lengths:** `Short`, `Medium`, `Long`
+- **Retrieval paradigms:** `KG`, `Hybrid`, `Graph`
 
 ## Quick start
 
@@ -109,7 +130,7 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 
 - Use fixed `--seed` where available
 - Keep the released KG at `kg/liveaid_instances_master.ttl` for stable runs
-- Thresholds in `--support-extra` control evidence matching for support and coverage
+- Thresholds in `--support-extra` control evidence matching behaviour for Support and Coverage metrics and should be fixed for reproducible comparisons.
 
 ## Troubleshooting
 
@@ -122,7 +143,7 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 If you use the LiveAid KG or the methodologies and findings from this research in your work, please cite the original paper. (*Bibliographic details are omitted here to preserve anonymity for review processes.*)
 
 ```bibtex
-@inproceedings{Barla2026CQStoryRAG,
+@inproceedings{Barla2026CQDrivenRAG,
   title={Competency Questions as Executable Plans: a Controlled RAG Architecture for Cultural Heritage Storytelling},
   author={Barla, Naga Sowjanya and de Berardinis, Jacopo},
   publisher={Springer},
