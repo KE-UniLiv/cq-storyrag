@@ -30,6 +30,7 @@ from typing import Dict, List, Optional
 PROJECT_ROOT       = Path(".").resolve()
 PIPELINE_PATH      = PROJECT_ROOT / "pipeline_programmatic.py"
 PIPELINE_GRAPH     = PROJECT_ROOT / "pipeline_graph.py"
+PIPELINE_ENRICHED  = PROJECT_ROOT / "pipeline_enriched.py"
 EVAL_CLI           = PROJECT_ROOT / "eval" / "eval_cli.py"
 
 # Inputs (adjust paths if your tree differs)
@@ -150,7 +151,7 @@ def simple_clean_story(text: str) -> str:
     return "\n\n".join(out).strip() + ("\n" if out else "")
 
 def _norm_pat(p: str) -> str:
-    m = {"kg": "KG", "hybrid": "Hybrid", "graph": "Graph"}
+    m = {"kg": "KG", "hybrid": "Hybrid", "graph": "Graph", "enriched": "Enriched"}
     return m.get(p.lower().strip(), p)
 
 def build_cmd(pattern: str, persona: str, length: str, seed: int, run_root: Path) -> List[str]:
@@ -160,6 +161,8 @@ def build_cmd(pattern: str, persona: str, length: str, seed: int, run_root: Path
     """
     if pattern.lower() == "graph":
         args: List[str] = [sys.executable, str(PIPELINE_GRAPH)]
+    elif pattern.lower() == "enriched":
+        args: List[str] = [sys.executable, str(PIPELINE_ENRICHED)]
     else:
         args: List[str] = [sys.executable, str(PIPELINE_PATH)]
         args += ["--pattern", pattern]
